@@ -27,7 +27,7 @@ gulp.task('lint', function () {
 
 gulp.task('dist', [ 'lint' ], function () {
   return gulp.src(sources.dist)
-    .pipe(zip('my-new-tab.xpi', {
+    .pipe(zip('youtube-thumbnail.xpi', {
       compress: false
     }))
     .pipe(gulp.dest('dist'));
